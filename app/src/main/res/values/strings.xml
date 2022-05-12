@@ -4,5 +4,10 @@
     <string name="kolomentor">KOLOMENTOR</string>
     <string name="mentorRegisterBtn">Register as a mentor</string>
     <string name="menteeRegisterBtn">Register as a mentee</string>
+    <string name="loginBtn">Login</string>
+    <string name="loginText">LOGIN</string>
     <string name="loginTextBtn">Returning User? LOGIN</string>
+    <string name="registerTextBtn">Not a member? Register</string>
+    <string name="passwordHint">Enter your Password</string>
+    <string name="emailHint">Enter your Email</string>
 </resources>
