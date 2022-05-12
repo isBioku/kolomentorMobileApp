@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Kolomentor</string>
+    <string name="welcometext">welcome to</string>
+    <string name="kolomentor">KOLOMENTOR</string>
+    <string name="mentorRegisterBtn">Register as a mentor</string>
+    <string name="menteeRegisterBtn">Register as a mentee</string>
+    <string name="loginTextBtn">Returning User? LOGIN</string>
+</resources>
