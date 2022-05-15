@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        setContentView(R.layout.sign_up);
+        setContentView(R.layout.mentee_activity);
 
     }
 }

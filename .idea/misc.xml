@@ -5,16 +5,24 @@
       <map>
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.13125" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/border.xml" value="0.15" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_briefcase_4_fill.xml" value="0.1" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_community.xml" value="0.1" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_frontend.xml" value="0.1" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_graphic_design.xml" value="0.1" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_home_background.xml" value="0.1935" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_home_foreground.xml" value="0.1935" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_kolo.xml" value="0.15885416666666666" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_kolomentor_shape.xml" value="0.15" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_launcher_background.xml" value="0.13125" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_pvodza01.xml" value="0.15885416666666666" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_resources.xml" value="0.1935" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_resources_foreground.xml" value="0.1" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_toggle_foreground.xml" value="0.1935" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/roundededge.xml" value="0.15" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/activity_main.xml" value="0.136" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/activity_sign_up.xml" value="0.2223731884057971" />
-        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/mentee_activity.xml" value="0.152" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/mentee_activity.xml" value="0.1" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/sign_up.xml" value="0.136" />
       </map>
     </option>
@@ -24,5 +32,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2" />
+      </ProjectState>
+    </option>
   </component>
 </project>
