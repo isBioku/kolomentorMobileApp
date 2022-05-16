@@ -19,6 +19,6 @@ public class login extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        setContentView(R.layout.mentee_activity);
+        setContentView(R.layout.activity_mentee);
     }
 }

@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MenteeActivity extends AppCompatActivity {
+public class activity_mentee extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

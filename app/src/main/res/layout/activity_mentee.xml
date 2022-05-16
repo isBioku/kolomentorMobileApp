@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_mentee">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="395dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3333"
+        android:layout_width="407dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout222"
+                android:layout_width="294dp"
+                android:layout_height="130dp"
+                android:orientation="vertical"
+                app:layout_column="0"
+                app:layout_constraintBottom_toTopOf="@+id/guideline17"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.131"
+                app:layout_row="0">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="273dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:text="Hello, BIOKU"
+                    android:textColor="#272324"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                    app:layout_constraintHorizontal_bias="0.896"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="272dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="-22dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
+                    android:text="welcome back, today is a great day to keep advancing your career"
+                    android:textColor="#736767"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView32"
+                    app:layout_constraintHorizontal_bias="0.404"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView"
+                    app:layout_constraintVertical_bias="0.018" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="97dp"
+                android:layout_height="111dp"
+                android:orientation="vertical"
+                app:layout_column="1"
+                app:layout_constraintBottom_toTopOf="@+id/guideline17"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.131"
+                app:layout_row="0">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30dp"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/guideline5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@drawable/ic_defaultdp" />
+            </LinearLayout>
+
+        </androidx.gridlayout.widget.GridLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="112dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="394dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline17"
+        app:layout_constraintVertical_bias="0.031">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            app:columnCount="3"
+            app:layout_constraintEnd_toStartOf="@+id/imageView6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:rowCount="1"
+            tools:layout_editor_absoluteY="133dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:outlineProvider="background"
+                android:textAlignment="center"
+                app:cardBackgroundColor="#800020"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="2dp"
+                tools:ignore="TouchTargetSizeCheck">
+
+                <TextView
+                    android:id="@+id/textView244"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Programming"
+                    android:textColor="#FFFFFF" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="2dp"
+                tools:ignore="TouchTargetSizeCheck">
+
+                <TextView
+                    android:id="@+id/textView224"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Management"
+                    android:textColor="#800020" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="2dp"
+                tools:ignore="TouchTargetSizeCheck">
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Graphics/Design"
+                    android:textColor="#800020" />
+            </androidx.cardview.widget.CardView>
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toTopOf="@+id/searchView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/gridLayout"
+            app:srcCompat="@drawable/ic_toggle_foreground" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="187dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="412dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        android:showDividers="end"
+        app:layout_constraintBottom_toTopOf="@+id/guideline24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline18">
+
+        <SearchView
+            android:id="@+id/searchView2"
+            style="@android:style/Widget.Material.SearchView"
+            android:layout_width="382dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:gravity="start"
+            android:iconifiedByDefault="false"
+            android:queryHint="search for a mentor"
+            android:searchHintIcon="@drawable/ic_pvodza01">
+
+        </SearchView>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="229dp" />
+
+    <LinearLayout
+        android:layout_width="406dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline24">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Career"
+            android:textColor="#800020"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchView2" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="259dp"
+            android:layout_height="33dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="40dp"
+            android:fontFamily="@font/poppins"
+            android:text="Choose a career that best suits your interest to start learning"
+            android:textColor="#636263"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.162"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.096" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="283dp" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="420dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline25">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:padding="20dp"
+                app:columnCount="2"
+                app:columnOrderPreserved="false">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="15dp"
+                    android:clickable="true"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp"
+                    app:cardMaxElevation="2dp">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="139dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="App Development"
+                        android:textColor="#800020" />
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        app:srcCompat="@drawable/ic_app_development" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView24"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        app:srcCompat="@drawable/ic_server" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Back End Engineering"
+                        android:textColor="#800020" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView25"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        app:srcCompat="@drawable/ic_software_engineering" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Software Engineering"
+                        android:textColor="#800020" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView26"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        app:srcCompat="@drawable/ic_web_development" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Front End Engineering"
+                        android:textColor="#800020" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView27"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        app:srcCompat="@drawable/ic_algorithm" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Algorithm Expert"
+                        android:textColor="#800020" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        app:srcCompat="@drawable/ic_cloud_engineering" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="128dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Cloud Engineering"
+                        android:textColor="#800020" />
+                </androidx.cardview.widget.CardView>
+
+
+            </androidx.gridlayout.widget.GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="699dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="383dp"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline20">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="-10dp"
+            android:backgroundTint="#976161"
+            app:columnCount="5"
+            app:columnOrderPreserved="false"
+            app:rowCount="1">
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="15dp"
+                app:columnCount="1"
+                app:layout_gravity="center"
+                app:rowCount="2">
+
+                <ImageView
+                    android:id="@+id/imageView4211"
+                    android:layout_width="37dp"
+                    android:layout_height="32dp"
+                    app:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_home" />
+
+                <TextView
+                    android:id="@+id/textView913"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Home"
+                    android:textColor="#800020"
+                    app:layout_gravity="center" />
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="15dp"
+                app:columnCount="1"
+                app:layout_gravity="center"
+                app:rowCount="2">
+
+                <ImageView
+                    android:id="@+id/imageView42171"
+                    android:layout_width="37dp"
+                    android:layout_height="32dp"
+                    app:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_resources" />
+
+                <TextView
+                    android:id="@+id/textView91j3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dp"
+                    android:text="Resources"
+                    app:layout_gravity="center" />
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="15dp"
+                app:columnCount="1"
+                app:layout_gravity="center"
+                app:rowCount="2">
+
+                <ImageView
+                    android:id="@+id/imageView1111"
+                    android:layout_width="37dp"
+                    android:layout_height="32dp"
+                    android:textAlignment="center"
+                    app:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_community" />
+
+                <TextView
+                    android:id="@+id/textView999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Community"
+                    app:layout_gravity="center" />
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="15dp"
+                app:columnCount="1"
+                app:layout_gravity="center"
+                app:rowCount="2">
+
+                <ImageView
+                    android:id="@+id/imageView42114"
+                    android:layout_width="37dp"
+                    android:layout_height="32dp"
+                    app:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_message" />
+
+                <TextView
+                    android:id="@+id/textView9163"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Messages"
+                    app:layout_gravity="center" />
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:columnCount="1"
+                app:layout_gravity="center"
+                app:rowCount="2">
+
+                <ImageView
+                    android:id="@+id/imageView13t1"
+                    android:layout_width="37dp"
+                    android:layout_height="32dp"
+                    app:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_profile" />
+
+                <TextView
+                    android:id="@+id/textViewd9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Profile"
+                    app:layout_gravity="center" />
+
+            </androidx.gridlayout.widget.GridLayout>
+
+        </androidx.gridlayout.widget.GridLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="772dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
