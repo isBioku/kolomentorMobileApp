@@ -11,14 +11,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="16dp" />
+        app:layout_constraintGuide_begin="-19dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="395dp" />
+        app:layout_constraintGuide_begin="407dp" />
 
     <LinearLayout
         android:id="@+id/linearLayout3333"
@@ -34,13 +34,14 @@
         app:layout_constraintVertical_bias="0.131">
 
         <androidx.gridlayout.widget.GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/special_info">
 
             <LinearLayout
                 android:id="@+id/linearLayout222"
-                android:layout_width="294dp"
-                android:layout_height="130dp"
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
                 android:orientation="vertical"
                 app:layout_column="0"
                 app:layout_constraintBottom_toTopOf="@+id/guideline17"
@@ -53,13 +54,13 @@
 
                 <TextView
                     android:id="@+id/textView5"
-                    android:layout_width="273dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="0dp"
                     android:layout_weight="1"
                     android:text="Hello, BIOKU"
-                    android:textColor="#272324"
+                    android:textColor="#33010D"
                     android:textSize="24sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/guideline5"
@@ -69,15 +70,16 @@
 
                 <TextView
                     android:id="@+id/textView6"
-                    android:layout_width="272dp"
+                    android:layout_width="372dp"
                     android:layout_height="64dp"
                     android:layout_marginStart="20dp"
-                    android:layout_marginTop="-22dp"
+                    android:layout_marginTop="-25dp"
                     android:layout_weight="1"
+                    android:background="@drawable/special_info"
                     android:fontFamily="@font/poppins"
-                    android:text="welcome back, today is a great day to keep advancing your career"
-                    android:textColor="#736767"
-                    android:textSize="14sp"
+                    android:text="Please take enough time to browse through and select from the list of careers in tech and Kolomentor will pair you with the appropriate mentor "
+                    android:textColor="#330404"
+                    android:textSize="12sp"
                     app:layout_constraintBottom_toTopOf="@+id/gridLayout"
                     app:layout_constraintEnd_toStartOf="@+id/imageView32"
                     app:layout_constraintHorizontal_bias="0.404"
@@ -85,34 +87,6 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView"
                     app:layout_constraintVertical_bias="0.018" />
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/linearLayout"
-                android:layout_width="97dp"
-                android:layout_height="111dp"
-                android:orientation="vertical"
-                app:layout_column="1"
-                app:layout_constraintBottom_toTopOf="@+id/guideline17"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.131"
-                app:layout_row="0">
-
-                <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="30dp"
-                    app:layout_constraintBottom_toTopOf="@+id/imageView6"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline5"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="1.0"
-                    app:srcCompat="@drawable/ic_defaultdp" />
             </LinearLayout>
 
         </androidx.gridlayout.widget.GridLayout>
@@ -123,13 +97,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="112dp" />
+        app:layout_constraintGuide_begin="117dp" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="394dp"
         android:layout_height="45dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/guideline24"
         app:layout_constraintEnd_toEndOf="parent"
@@ -214,13 +188,14 @@
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="47dp"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
             android:layout_weight="1"
             app:layout_constraintBottom_toTopOf="@+id/searchView2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/gridLayout"
-            app:srcCompat="@drawable/ic_toggle_foreground" />
+            app:srcCompat="@drawable/ic_equalizer_fill"
+            app:tint="#800020" />
 
     </LinearLayout>
 
@@ -252,7 +227,7 @@
             android:layout_marginStart="20dp"
             android:gravity="start"
             android:iconifiedByDefault="false"
-            android:queryHint="search for a mentor"
+            android:queryHint=" search for career "
             android:searchHintIcon="@drawable/ic_pvodza01">
 
         </SearchView>
@@ -268,7 +243,6 @@
     <LinearLayout
         android:layout_width="406dp"
         android:layout_height="85dp"
-        android:layout_marginTop="20dp"
         android:layout_marginBottom="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/guideline25"
@@ -281,6 +255,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
             android:fontFamily="@font/poppins_bold"
             android:text="Career"
             android:textColor="#800020"
@@ -297,6 +272,7 @@
             android:layout_height="33dp"
             android:layout_gravity="start"
             android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
             android:fontFamily="@font/poppins"
             android:text="Choose a career that best suits your interest to start learning"
             android:textColor="#636263"
@@ -314,28 +290,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="283dp" />
+        app:layout_constraintGuide_begin="324dp" />
 
     <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="420dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="20dp"
+        android:layout_width="387dp"
+        android:layout_height="407dp"
         android:scrollbars="none"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintBottom_toTopOf="@+id/guideline23"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline25">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:orientation="vertical">
 
             <androidx.gridlayout.widget.GridLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:padding="20dp"
                 app:columnCount="2"
                 app:columnOrderPreserved="false">
@@ -499,160 +473,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="699dp" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="383dp"
-        android:layout_height="56dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/guideline23"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline20">
-
-        <androidx.gridlayout.widget.GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center|top"
-            android:layout_marginTop="-10dp"
-            android:backgroundTint="#976161"
-            app:columnCount="5"
-            app:columnOrderPreserved="false"
-            app:rowCount="1">
-
-            <androidx.gridlayout.widget.GridLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="15dp"
-                app:columnCount="1"
-                app:layout_gravity="center"
-                app:rowCount="2">
-
-                <ImageView
-                    android:id="@+id/imageView4211"
-                    android:layout_width="37dp"
-                    android:layout_height="32dp"
-                    app:layout_gravity="center"
-                    app:srcCompat="@drawable/ic_home" />
-
-                <TextView
-                    android:id="@+id/textView913"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-15dp"
-                    android:fontFamily="@font/poppins"
-                    android:text="Home"
-                    android:textColor="#800020"
-                    app:layout_gravity="center" />
-
-            </androidx.gridlayout.widget.GridLayout>
-
-            <androidx.gridlayout.widget.GridLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="15dp"
-                app:columnCount="1"
-                app:layout_gravity="center"
-                app:rowCount="2">
-
-                <ImageView
-                    android:id="@+id/imageView42171"
-                    android:layout_width="37dp"
-                    android:layout_height="32dp"
-                    app:layout_gravity="center"
-                    app:srcCompat="@drawable/ic_resources" />
-
-                <TextView
-                    android:id="@+id/textView91j3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-15dp"
-                    android:text="Resources"
-                    app:layout_gravity="center" />
-
-            </androidx.gridlayout.widget.GridLayout>
-
-            <androidx.gridlayout.widget.GridLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="15dp"
-                app:columnCount="1"
-                app:layout_gravity="center"
-                app:rowCount="2">
-
-                <ImageView
-                    android:id="@+id/imageView1111"
-                    android:layout_width="37dp"
-                    android:layout_height="32dp"
-                    android:textAlignment="center"
-                    app:layout_gravity="center"
-                    app:srcCompat="@drawable/ic_community" />
-
-                <TextView
-                    android:id="@+id/textView999"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-15dp"
-                    android:fontFamily="@font/poppins"
-                    android:text="Community"
-                    app:layout_gravity="center" />
-
-            </androidx.gridlayout.widget.GridLayout>
-
-            <androidx.gridlayout.widget.GridLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="15dp"
-                app:columnCount="1"
-                app:layout_gravity="center"
-                app:rowCount="2">
-
-                <ImageView
-                    android:id="@+id/imageView42114"
-                    android:layout_width="37dp"
-                    android:layout_height="32dp"
-                    app:layout_gravity="center"
-                    app:srcCompat="@drawable/ic_message" />
-
-                <TextView
-                    android:id="@+id/textView9163"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-15dp"
-                    android:fontFamily="@font/poppins"
-                    android:text="Messages"
-                    app:layout_gravity="center" />
-
-            </androidx.gridlayout.widget.GridLayout>
-
-            <androidx.gridlayout.widget.GridLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                app:columnCount="1"
-                app:layout_gravity="center"
-                app:rowCount="2">
-
-                <ImageView
-                    android:id="@+id/imageView13t1"
-                    android:layout_width="37dp"
-                    android:layout_height="32dp"
-                    app:layout_gravity="center"
-                    app:srcCompat="@drawable/ic_profile" />
-
-                <TextView
-                    android:id="@+id/textViewd9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-15dp"
-                    android:fontFamily="@font/poppins"
-                    android:text="Profile"
-                    app:layout_gravity="center" />
-
-            </androidx.gridlayout.widget.GridLayout>
-
-        </androidx.gridlayout.widget.GridLayout>
-    </LinearLayout>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline23"
