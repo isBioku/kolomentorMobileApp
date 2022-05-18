@@ -7,6 +7,13 @@
     tools:context=".activity_mentee">
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="535dp" />
+
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,30 +25,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="407dp" />
+        app:layout_constraintGuide_begin="411dp" />
 
     <LinearLayout
         android:id="@+id/linearLayout3333"
-        android:layout_width="407dp"
-        android:layout_height="87dp"
-        android:layout_marginTop="15dp"
+        android:layout_width="414dp"
+        android:layout_height="121dp"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/guideline17"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toStartOf="@+id/guideline22"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.131">
 
         <androidx.gridlayout.widget.GridLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/special_info">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/special_info"
+            android:padding="20dp">
 
             <LinearLayout
                 android:id="@+id/linearLayout222"
-                android:layout_width="match_parent"
-                android:layout_height="127dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
                 app:layout_column="0"
                 app:layout_constraintBottom_toTopOf="@+id/guideline17"
@@ -53,31 +61,12 @@
                 app:layout_row="0">
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="0dp"
                     android:layout_weight="1"
-                    android:text="Hello, BIOKU"
-                    android:textColor="#33010D"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline5"
-                    app:layout_constraintHorizontal_bias="0.896"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="372dp"
-                    android:layout_height="64dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="-25dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/special_info"
                     android:fontFamily="@font/poppins"
-                    android:text="Please take enough time to browse through and select from the list of careers in tech and Kolomentor will pair you with the appropriate mentor "
+                    android:text="Please take enough time to browse through and select from the list of careers in tech for Kolomentor to pair you with the appropriate mentor "
                     android:textColor="#330404"
                     android:textSize="12sp"
                     app:layout_constraintBottom_toTopOf="@+id/gridLayout"
@@ -97,7 +86,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="117dp" />
+        app:layout_constraintGuide_begin="129dp" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -186,16 +175,19 @@
 
         </androidx.gridlayout.widget.GridLayout>
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:layout_weight="1"
-            app:layout_constraintBottom_toTopOf="@+id/searchView2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/gridLayout"
-            app:srcCompat="@drawable/ic_equalizer_fill"
-            app:tint="#800020" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|start"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:onClick="popUpCard"
+                app:srcCompat="@drawable/ic_equalizer_fill" />
+        </LinearLayout>
 
     </LinearLayout>
 
