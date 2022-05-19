@@ -86,20 +86,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="129dp" />
+        app:layout_constraintGuide_begin="121dp" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="394dp"
         android:layout_height="45dp"
-        android:layout_marginTop="10dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/guideline24"
+        app:layout_constraintBottom_toTopOf="@+id/guideline18"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline17"
-        app:layout_constraintVertical_bias="0.031">
+        app:layout_constraintTop_toTopOf="@+id/guideline17">
 
         <androidx.gridlayout.widget.GridLayout
             android:id="@+id/gridLayout"
@@ -196,30 +194,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="187dp" />
+        app:layout_constraintGuide_begin="166dp" />
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="412dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="-20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_width="351dp"
+        android:layout_height="47dp"
+        android:background="@drawable/search_border"
         android:orientation="horizontal"
         android:showDividers="end"
         app:layout_constraintBottom_toTopOf="@+id/guideline24"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline22"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline18">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <SearchView
             android:id="@+id/searchView2"
             style="@android:style/Widget.Material.SearchView"
-            android:layout_width="382dp"
+            android:layout_width="300dp"
             android:layout_height="match_parent"
+            android:layout_gravity="center|start"
             android:layout_marginStart="20dp"
-            android:gravity="start"
+            android:gravity="center"
             android:iconifiedByDefault="false"
-            android:queryHint=" search for career "
+            android:queryHint=" search for career"
             android:searchHintIcon="@drawable/ic_pvodza01">
 
         </SearchView>
@@ -230,7 +228,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="229dp" />
+        app:layout_constraintGuide_begin="231dp" />
 
     <LinearLayout
         android:layout_width="406dp"
@@ -307,10 +305,12 @@
                 app:columnOrderPreserved="false">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/appDevelopment"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_margin="15dp"
                     android:clickable="true"
+                    android:onClick="goToAppDevelopmentMentors"
                     app:cardCornerRadius="15dp"
                     app:cardElevation="5dp"
                     app:cardMaxElevation="2dp">
@@ -324,11 +324,12 @@
                         android:textColor="#800020" />
 
                     <ImageView
-                        android:id="@+id/imageView13"
+                        android:id="@+id/appDevelopmentSVG"
                         android:layout_width="match_parent"
                         android:layout_height="90dp"
                         android:layout_gravity="center"
                         android:layout_margin="20dp"
+                        android:onClick="goToAppDevelopmentMentors"
                         app:srcCompat="@drawable/ic_app_development" />
                 </androidx.cardview.widget.CardView>
 

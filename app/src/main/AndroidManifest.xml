@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kolomentor">
         <activity
+            android:name=".SelectMentor"
+            android:exported="false" />
+        <activity
             android:name=".CategoriesPopup"
             android:exported="false" />
         <activity

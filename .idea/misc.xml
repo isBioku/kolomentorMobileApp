@@ -5,7 +5,9 @@
       <map>
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.13125" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/border.xml" value="0.15" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/categories_definition.xml" value="0.317" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_briefcase_4_fill.xml" value="0.1" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_close_fill.xml" value="0.317" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_community.xml" value="0.1" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_data.xml" value="0.317" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_equalizer_fill.xml" value="0.3425" />
@@ -28,9 +30,11 @@
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_testing.xml" value="0.317" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_toggle_foreground.xml" value="0.1935" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_writing.xml" value="0.317" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/pop_up_card_bg_color.xml" value="0.317" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/receiver.xml" value="0.2115" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/rounded_corners.xml" value="0.199" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/roundededge.xml" value="0.15" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/search_border.xml" value="0.317" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/sender.xml" value="0.2125" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/special_info.xml" value="0.3425" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/text_background.xml" value="0.317" />
@@ -41,6 +45,7 @@
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/activity_mentee.xml" value="0.264" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/activity_mentee2.xml" value="0.264" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/activity_messages.xml" value="0.2" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/activity_select_mentor.xml" value="0.264" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/activity_sign_up.xml" value="0.2223731884057971" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/career_selection.xml" value="0.264" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/content_scrolling.xml" value="0.25067996373526746" />
