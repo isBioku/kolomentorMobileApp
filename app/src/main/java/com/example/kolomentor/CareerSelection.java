@@ -8,7 +8,6 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.PopupMenu;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -48,13 +47,13 @@ public class CareerSelection extends AppCompatActivity {
         svgAppDevCareer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(CareerSelection.this, SelectMentor.class));
+                startActivity(new Intent(CareerSelection.this, ListOfMentors.class));
             }
         });
         appDevelopmentCareer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(CareerSelection.this, SelectMentor.class));
+                startActivity(new Intent(CareerSelection.this, ListOfMentors.class));
 
             }
         });

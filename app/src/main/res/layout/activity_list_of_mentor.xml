@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SelectMentor">
+    tools:context=".ListOfMentors">
 
     <LinearLayout
         android:id="@+id/linearLayout10"
@@ -163,11 +163,12 @@
                             android:text="Profile Portfolio" />
 
                         <TextView
-                            android:id="@+id/textViewrrged21"
+                            android:id="@+id/individualMentor"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="bottom|center"
+                            android:onClick="goToIndividualMentor"
                             android:text="Connect" />
                     </LinearLayout>
 
