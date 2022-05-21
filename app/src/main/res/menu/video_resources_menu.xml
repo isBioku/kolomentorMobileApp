@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/ic_check_solid"
+        android:title="@string/html" />
+    <item android:title="@string/css" />
+    <item android:title="@string/bootstrap" />
+    <item android:title="@string/javascript" />
+</menu>

@@ -20,7 +20,7 @@ public class CareerSelection extends AppCompatActivity {
     CardView appDevelopmentCareer;
     ImageView svgAppDevCareer;
 
-    Dialog myDialog;
+    //Dialog myDialog;
     ImageView closeBtn;
     LinearLayout cyber;
     @Override
@@ -31,7 +31,7 @@ public class CareerSelection extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.career_selection);
-        myDialog = new Dialog(this);
+        //myDialog = new Dialog(this);
 
 
 
@@ -67,13 +67,14 @@ public class CareerSelection extends AppCompatActivity {
 
 
     public void popUpCard (View view) {
-
+        Dialog myDialog = new Dialog(this);
         myDialog.setContentView(R.layout.activity_categories_popup);
         closeBtn = myDialog.findViewById(R.id.closePopUp);
         cyber = myDialog.findViewById(R.id.cyberSecurity);
         closeBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
+
                 myDialog.dismiss();
             }
         });

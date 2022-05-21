@@ -105,4 +105,8 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+    <string name="html">HTML</string>
+    <string name="css">CSS</string>
+    <string name="javascript">JAVASCRIPT</string>
+    <string name="bootstrap">BOOTSTRAP</string>
 </resources>

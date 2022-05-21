@@ -7,6 +7,7 @@
     tools:context=".MenteeDashboard">
 
     <LinearLayout
+        android:id="@+id/linearLayout9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
@@ -90,7 +91,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/poppins_black"
-                                    android:text="HTML"
+                                    android:text="CSS"
                                     android:textColor="#800020"
                                     android:textSize="16sp" />
 
@@ -139,7 +140,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/poppins_bold"
-                                    android:text="0"
+                                    android:text="1"
                                     android:textColor="#FFFFFF"
                                     android:textSize="16sp" />
 
@@ -169,6 +170,329 @@
     </LinearLayout>
 
     <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="29dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView5"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView5"
+        app:layout_constraintStart_toStartOf="@+id/scrollView5">
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Your Career Journey"
+            android:textColor="#800020"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="388dp"
+        android:layout_height="340dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/guideline32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                app:columnCount="1"
+                app:columnOrderPreserved="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="1dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:background="#318000"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle_success"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imagedfgView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                app:srcCompat="@drawable/ic_check_solid"
+                                app:tint="#FFFFFF" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/succes_text_wrapper"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewsdfgd37"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="@font/poppins_black"
+                            android:text="HTML"
+                            android:textColor="#2C6802"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/textVisdgrew36"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="7dp"
+                            android:text="quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 		olup.	nderit in volup."
+                            android:textColor="#2C6802" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="1dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:background="#D5B233"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle_inprogress"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imasfghgeView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                app:srcCompat="@drawable/ic_check_solid"
+                                app:tint="#FFFFFF" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/in_progress_text_wrapper"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textVisdfhgew37"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="@font/poppins_black"
+                            android:text="CSS"
+                            android:textColor="#D5B233"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/textVsdfhiew36"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="7dp"
+                            android:text="quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 		olup.	nderit in volup."
+                            android:textColor="#D5B233" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="1dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:background="#800020"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle_not_started"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageVsthiew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                app:srcCompat="@drawable/ic_check_solid"
+                                app:tint="#FFFFFF" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/not_started_text_wrapper"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViesgtw37"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="@font/poppins_black"
+                            android:text="BOOTSTRAP"
+                            android:textColor="#800020"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/textVshfiew36"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="7dp"
+                            android:text="quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 		olup.	nderit in volup."
+                            android:textColor="#800020" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="1dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:background="#800020"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle_not_started"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                app:srcCompat="@drawable/ic_check_solid"
+                                app:tint="#FFFFFF" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/not_started_text_wrapper"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView37"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="@font/poppins_black"
+                            android:text="JAVASCRIPT"
+                            android:textColor="#800020"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/textView36"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="7dp"
+                            android:text="quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 		olup.	nderit in volup."
+                            android:textColor="#800020" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.gridlayout.widget.GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="701dp" />
+
+    <LinearLayout
         android:id="@+id/linearLayout5"
         android:layout_width="396dp"
         android:layout_height="59dp"
@@ -186,6 +510,7 @@
             app:rowCount="1">
 
             <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/homeGrid"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
@@ -241,6 +566,7 @@
             </androidx.gridlayout.widget.GridLayout>
 
             <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/community"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="15dp"
@@ -268,9 +594,11 @@
             </androidx.gridlayout.widget.GridLayout>
 
             <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/messages"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="15dp"
+                android:onClick="goToMessages"
                 app:columnCount="1"
                 app:layout_gravity="center"
                 app:rowCount="2">
@@ -321,10 +649,4 @@
         </androidx.gridlayout.widget.GridLayout>
     </LinearLayout>
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline32"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="701dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
