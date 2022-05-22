@@ -23,10 +23,9 @@ public class MentorChoice extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).hide();
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_list_of_mentor);
-
         setContentView(R.layout.activity_mentor_choice);
     }
+
 
     public void selectMentorNo (View view) {
         dontSelectMentorBtn = findViewById(R.id.dontSelectMentor);

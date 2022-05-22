@@ -20,7 +20,7 @@ public class CareerSelection extends AppCompatActivity {
     CardView appDevelopmentCareer;
     ImageView svgAppDevCareer;
 
-    //Dialog myDialog;
+
     ImageView closeBtn;
     LinearLayout cyber;
     @Override
@@ -30,12 +30,8 @@ public class CareerSelection extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).hide();
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.career_selection);
-        //myDialog = new Dialog(this);
-
-
-
-
     }
 
 

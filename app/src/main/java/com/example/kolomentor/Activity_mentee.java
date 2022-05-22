@@ -8,7 +8,7 @@ import android.view.WindowManager;
 
 import java.util.Objects;
 
-public class login extends AppCompatActivity {
+public class Activity_mentee extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,6 @@ public class login extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        setContentView(R.layout.activity_messages);
+        setContentView(R.layout.career_selection);
     }
 }

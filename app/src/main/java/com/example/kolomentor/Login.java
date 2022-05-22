@@ -1,18 +1,14 @@
 package com.example.kolomentor;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.GridLayout;
 
 import java.util.Objects;
 
-public class Messages extends AppCompatActivity {
-
-
-    //GridLayout resourcesGrid;
+public class Login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

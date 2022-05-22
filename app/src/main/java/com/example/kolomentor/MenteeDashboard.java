@@ -11,7 +11,7 @@ import androidx.gridlayout.widget.GridLayout;
 
 import java.util.Objects;
 
-public class MenteeDashboard extends AppCompatActivity {
+public class MenteeDashboard extends AppCompatActivity{
     GridLayout homeGrid, resourcesGrid, communityDrid,  messagesGrid, profileGrid;
 
     @Override
@@ -21,7 +21,6 @@ public class MenteeDashboard extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).hide();
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_list_of_mentor);
 
         setContentView(R.layout.activity_mentee_dashboard);
     }
