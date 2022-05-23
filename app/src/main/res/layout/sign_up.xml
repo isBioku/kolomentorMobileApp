@@ -66,6 +66,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout11"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -89,7 +90,7 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/hvjhvj"
+                    android:id="@+id/last_name_id"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/text_background"
@@ -110,7 +111,7 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName5"
+                    android:id="@+id/first_name_id"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/text_background"
@@ -129,7 +130,7 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/editTextTextEmailAddress3"
+                    android:id="@+id/email_id"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/text_background"
@@ -148,7 +149,7 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/editTextTextPassword6"
+                    android:id="@+id/password_id"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/text_background"
@@ -167,7 +168,7 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/editTextTextPassword2"
+                    android:id="@+id/re_enter_password_id"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/text_background"
@@ -179,12 +180,13 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/ertyerty"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/menteeSignUpButton"
+                    android:id="@+id/sign_up_button_id"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -192,7 +194,8 @@
                     android:padding="10dp"
                     android:text="SIGN UP"
                     android:textAlignment="center"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
             </LinearLayout>
 
             <LinearLayout
@@ -201,7 +204,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/loginText"
+                    android:id="@+id/login_text_id"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:clickable="true"

@@ -530,7 +530,7 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/hvjhvj"
+                    android:id="@+id/last_name_id"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
