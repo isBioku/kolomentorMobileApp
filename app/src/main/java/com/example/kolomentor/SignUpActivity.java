@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -26,14 +27,18 @@ import java.net.Authenticator;
 import java.util.Objects;
 
 public class SignUpActivity extends AppCompatActivity {
+    private FirebaseAuth authentication;
+
 
     private EditText last_name_field, first_name_field, email_field, password_field, re_enter_password_field;
     private Button sign_up_button;
     private TextView login_text;
-    public FirebaseAuth authentication;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -50,18 +55,14 @@ public class SignUpActivity extends AppCompatActivity {
                 signUp ();
             }
         });
+
+
     }
 
-
-
-
-
-
-
     public void signUp () {
-
         String  email_patterns =  "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
 
+        authentication = FirebaseAuth.getInstance();
         last_name_field = findViewById(R.id.last_name_id);
         first_name_field = findViewById(R.id.first_name_id);
         email_field = findViewById(R.id.email_id);
@@ -69,8 +70,6 @@ public class SignUpActivity extends AppCompatActivity {
         re_enter_password_field = findViewById(R.id.re_enter_password_id);
 
         login_text = findViewById(R.id.login_text_id);
-
-        //authentication = FirebaseAuth.getInstance();
 
         String lastName = last_name_field.getText().toString().trim();
         String firstName = first_name_field.getText().toString().trim();
@@ -82,38 +81,45 @@ public class SignUpActivity extends AppCompatActivity {
         if (TextUtils.isEmpty(lastName)) {
             last_name_field.setError("Last Name Cannot Be Empty");
             last_name_field.requestFocus();
+            return;
         }else if (lastName.length()<2) {
             last_name_field.setError("Last name cannot be lesser than 2 characters");
             last_name_field.requestFocus();
+            return;
         }
 
         if (TextUtils.isEmpty(firstName)) {
             first_name_field.setError("First Name Cannot Be Empty");
             first_name_field.requestFocus();
+            return;
         }
         if (TextUtils.isEmpty(email)) {
             email_field.setError("Email Cannot be Empty");
             email_field.requestFocus();
+            return;
         }else if (!email.matches(email_patterns)) {
             email_field.setError("Please provide a valid email");
+            return;
         }
         if (TextUtils.isEmpty(password)) {
             re_enter_password_field.setError("Please confirm your password ");
             re_enter_password_field.requestFocus();
+            return;
         }else if(password.length() < 7 ) {
             password_field.setError("Password is less than 7");
             password_field.requestFocus();
+            return;
         }else if (!password.equals(reEnterPassword)) {
             password_field.setError("password not match with confirm Password");
             password_field.requestFocus();
+            return;
         }
 
         if (TextUtils.isEmpty(password)) {
             password_field.setError("Password Cannot be Empty");
             password_field.requestFocus();
+            return;
         }
-
-
         authentication.createUserWithEmailAndPassword(email, password )
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
@@ -128,8 +134,8 @@ public class SignUpActivity extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if (task.isSuccessful()) {
                                         Toast.makeText(SignUpActivity.this, "Registration Successful" , Toast.LENGTH_LONG).show();
-                                        Intent goToListOfMentor = new Intent();
-                                        startActivity(goToListOfMentor);
+                                        Intent goToCareerSelection = new Intent( SignUpActivity.this, CareerSelection.class);
+                                        startActivity(goToCareerSelection);
                                     }else {
                                         Toast.makeText(SignUpActivity.this, "Registration Failed " , Toast.LENGTH_LONG).show();
                                     }

@@ -9,35 +9,6 @@
       "client_info": {
         "mobilesdk_app_id": "1:981730286792:android:ea6596ed5c1ce9070899fd",
         "android_client_info": {
-          "package_name": "com.android.application"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "981730286792-63rkdefedjvlpsnhd8paf1ve3vfkcov5.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBA8CcnZgBwOXzCM3vBUIVJb28n6TjvtZM"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "981730286792-63rkdefedjvlpsnhd8paf1ve3vfkcov5.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:981730286792:android:afa3d426d44f33f00899fd",
-        "android_client_info": {
           "package_name": "com.example.kolomentor"
         }
       },
