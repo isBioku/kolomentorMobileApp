@@ -48,6 +48,15 @@ public class SignUpActivity extends AppCompatActivity {
 
         setContentView(R.layout.sign_up);
 
+        login_text = findViewById(R.id.login_text_id);
+        login_text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToLogin = new Intent(SignUpActivity.this, Login.class);
+                startActivity(goToLogin);
+            }
+        });
+
         sign_up_button = findViewById(R.id.sign_up_button_id);
         sign_up_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,6 +65,10 @@ public class SignUpActivity extends AppCompatActivity {
             }
         });
 
+
+    }
+
+    public void goToLoginPage () {
 
     }
 
@@ -69,7 +82,6 @@ public class SignUpActivity extends AppCompatActivity {
         password_field = findViewById(R.id.password_id);
         re_enter_password_field = findViewById(R.id.re_enter_password_id);
 
-        login_text = findViewById(R.id.login_text_id);
 
         String lastName = last_name_field.getText().toString().trim();
         String firstName = first_name_field.getText().toString().trim();
@@ -79,44 +91,50 @@ public class SignUpActivity extends AppCompatActivity {
 
 
         if (TextUtils.isEmpty(lastName)) {
-            last_name_field.setError("Last Name Cannot Be Empty");
-            last_name_field.requestFocus();
+            last_name_field.setHint("Last Name Cannot be Empty");
+            last_name_field.setBackgroundResource(R.drawable.not_started_text_wrapper);
+            last_name_field.setError("Last Name Cannot be Empty");
             return;
         }else if (lastName.length()<2) {
-            last_name_field.setError("Last name cannot be lesser than 2 characters");
-            last_name_field.requestFocus();
+            last_name_field.setText("Password not equals to reenter password");
+            last_name_field.setBackgroundResource(R.drawable.not_started_text_wrapper);
             return;
+        }else if (!TextUtils.isEmpty(lastName)) {
+            last_name_field.setBackgroundResource(R.drawable.succes_text_wrapper);
+            last_name_field.getVisibility();
+
         }
 
         if (TextUtils.isEmpty(firstName)) {
-            first_name_field.setError("First Name Cannot Be Empty");
-            first_name_field.requestFocus();
+            first_name_field.setText("Password not equals to reenter password");
+            first_name_field.setBackgroundResource(R.drawable.not_started_text_wrapper);
             return;
         }
         if (TextUtils.isEmpty(email)) {
-            email_field.setError("Email Cannot be Empty");
-            email_field.requestFocus();
+            email_field.setText("Password not equals to reenter password");
+            email_field.setBackgroundResource(R.drawable.not_started_text_wrapper);
             return;
         }else if (!email.matches(email_patterns)) {
-            email_field.setError("Please provide a valid email");
+            email_field.setText("Password not equals to reenter password");
+            email_field.setBackgroundResource(R.drawable.not_started_text_wrapper);
             return;
         }
         if (TextUtils.isEmpty(password)) {
-            re_enter_password_field.setError("Please confirm your password ");
-            re_enter_password_field.requestFocus();
+            re_enter_password_field.setText("Password not equals to reenter password");
+            re_enter_password_field.setBackgroundResource(R.drawable.not_started_text_wrapper);
             return;
         }else if(password.length() < 7 ) {
-            password_field.setError("Password is less than 7");
-            password_field.requestFocus();
+            password_field.setText("Password not equals to reenter password");
+            password_field.setBackgroundResource(R.drawable.not_started_text_wrapper);
             return;
         }else if (!password.equals(reEnterPassword)) {
-            password_field.setError("password not match with confirm Password");
-            password_field.requestFocus();
+            password_field.setText("Password not equals to reenter password");
+            password_field.setBackgroundResource(R.drawable.not_started_text_wrapper);
             return;
         }
 
         if (TextUtils.isEmpty(password)) {
-            password_field.setError("Password Cannot be Empty");
+            password_field.setText("Password not equals to reenter password");
             password_field.requestFocus();
             return;
         }
@@ -136,6 +154,7 @@ public class SignUpActivity extends AppCompatActivity {
                                         Toast.makeText(SignUpActivity.this, "Registration Successful" , Toast.LENGTH_LONG).show();
                                         Intent goToCareerSelection = new Intent( SignUpActivity.this, CareerSelection.class);
                                         startActivity(goToCareerSelection);
+                                        finish();
                                     }else {
                                         Toast.makeText(SignUpActivity.this, "Registration Failed " , Toast.LENGTH_LONG).show();
                                     }

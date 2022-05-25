@@ -98,7 +98,6 @@
                     android:hint=" last name"
                     android:inputType="textPersonName"
                     android:padding="10dp"
-                    android:textColor="#610909"
                     android:textColorHint="#E1D5D5"
                     tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
@@ -211,7 +210,8 @@
                     android:gravity="center"
                     android:text="@string/loginTextBtn"
                     android:textColor="#E8C1CB"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
         </androidx.gridlayout.widget.GridLayout>
     </LinearLayout>
