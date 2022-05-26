@@ -16,25 +16,30 @@
 
         <TextView
             android:id="@+id/textView40"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="TextView" />
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginStart="20dp"
+            android:gravity="bottom"
+            android:text="Hi, BIOKU"
+            android:textColor="#0C0C0C"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView39"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:gravity="bottom"
+            android:text="How is it going" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="412dp"
-        android:layout_height="178dp"
+        android:layout_width="382dp"
+        android:layout_height="106dp"
         android:layout_marginTop="88dp"
+        android:background="@drawable/categories_definition"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></LinearLayout>
 
@@ -54,69 +59,987 @@
             android:orientation="vertical">
 
             <androidx.gridlayout.widget.GridLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="359dp"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:padding="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
                 app:columnCount="1"
                 app:columnOrderPreserved="false">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="154dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/categories_definition"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
+                    android:orientation="horizontal">
 
                     <androidx.gridlayout.widget.GridLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         app:columnCount="4"
                         app:rowCount="1">
 
                         <LinearLayout
-                            android:layout_width="88dp"
-                            android:layout_height="77dp"
-                            android:orientation="vertical">
+                            android:layout_width="34dp"
+                            android:layout_height="23dp"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical"
+                            app:layout_gravity="center">
 
                             <ImageView
                                 android:id="@+id/imageView14"
-                                android:layout_width="85dp"
-                                android:layout_height="81dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
                                 app:srcCompat="@drawable/ic_defaultdp" />
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_width="145dp"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
+                            android:layout_width="127dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_gravity="center">
 
                             <TextView
                                 android:id="@+id/textView42"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="TextView" />
+                                android:text="Bioku idowu Samuel"
+                                android:textSize="10sp" />
 
                             <TextView
                                 android:id="@+id/textView41"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="TextView" />
+                                android:text="bioku.bioku@gmail.com"
+                                android:textSize="8sp" />
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_width="105dp"
-                            android:layout_height="122dp"
-                            android:orientation="horizontal">
+                            android:layout_width="184dp"
+                            android:layout_height="47dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            app:layout_gravity="center">
 
                             <Button
                                 android:id="@+id/button2"
-                                android:layout_width="wrap_content"
+                                android:layout_width="148dp"
                                 android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
                                 android:layout_weight="1"
-                                android:text="Button" />
+                                android:backgroundTint="#800020"
+                                android:gravity="center"
+                                android:text="SMS"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp"
+                                app:strokeColor="#800020"
+                                app:strokeWidth="1dp" />
+
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Update"
+                                android:textColor="#800020"
+                                android:textSize="12sp"
+                                app:strokeColor="#800020"
+                                app:strokeWidth="1dp" />
+
+                        </LinearLayout>
+
+                    </androidx.gridlayout.widget.GridLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/categories_definition"
+                    android:orientation="horizontal">
+
+                    <androidx.gridlayout.widget.GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:columnCount="4"
+                        app:rowCount="1">
+
+                        <LinearLayout
+                            android:layout_width="34dp"
+                            android:layout_height="23dp"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical"
+                            app:layout_gravity="center">
+
+                            <ImageView
+                                android:id="@+id/imageView14"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/ic_defaultdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="127dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/textView42"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bioku idowu Samuel"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/textView41"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="bioku.bioku@gmail.com"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="184dp"
+                            android:layout_height="47dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            app:layout_gravity="center">
+
+                            <Button
+                                android:id="@+id/button2"
+                                android:layout_width="148dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#800020"
+                                android:gravity="center"
+                                android:text="SMS"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp"
+                                app:strokeColor="#800020"
+                                app:strokeWidth="1dp" />
+
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Update"
+                                android:textColor="#800020"
+                                android:textSize="12sp"
+                                app:strokeColor="#800020"
+                                app:strokeWidth="1dp" />
+
+                        </LinearLayout>
+
+                    </androidx.gridlayout.widget.GridLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/categories_definition"
+                    android:orientation="horizontal">
+
+                    <androidx.gridlayout.widget.GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:columnCount="4"
+                        app:rowCount="1">
+
+                        <LinearLayout
+                            android:layout_width="34dp"
+                            android:layout_height="23dp"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical"
+                            app:layout_gravity="center">
+
+                            <ImageView
+                                android:id="@+id/imageView14"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/ic_defaultdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="127dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/textView42"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bioku idowu Samuel"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/textView41"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="bioku.bioku@gmail.com"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="184dp"
+                            android:layout_height="47dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            app:layout_gravity="center">
+
+                            <Button
+                                android:id="@+id/button2"
+                                android:layout_width="148dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#800020"
+                                android:gravity="center"
+                                android:text="SMS"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp"
+                                app:strokeColor="#800020"
+                                app:strokeWidth="1dp" />
+
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Update"
+                                android:textColor="#800020"
+                                android:textSize="12sp"
+                                app:strokeColor="#800020"
+                                app:strokeWidth="1dp" />
+
+                        </LinearLayout>
+
+                    </androidx.gridlayout.widget.GridLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/categories_definition"
+                    android:orientation="horizontal">
+
+                    <androidx.gridlayout.widget.GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:columnCount="4"
+                        app:rowCount="1">
+
+                        <LinearLayout
+                            android:layout_width="34dp"
+                            android:layout_height="23dp"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical"
+                            app:layout_gravity="center">
+
+                            <ImageView
+                                android:id="@+id/imageView14"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/ic_defaultdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="127dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/textView42"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bioku idowu Samuel"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/textView41"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="bioku.bioku@gmail.com"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="184dp"
+                            android:layout_height="47dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            app:layout_gravity="center">
+
+                            <Button
+                                android:id="@+id/button2"
+                                android:layout_width="148dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#800020"
+                                android:gravity="center"
+                                android:text="SMS"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp"
+                                app:strokeColor="#800020"
+                                app:strokeWidth="1dp" />
+
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Update"
+                                android:textColor="#800020"
+                                android:textSize="12sp"
+                                app:strokeColor="#800020"
+                                app:strokeWidth="1dp" />
+
+                        </LinearLayout>
+
+                    </androidx.gridlayout.widget.GridLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/categories_definition"
+                    android:orientation="horizontal">
+
+                    <androidx.gridlayout.widget.GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:columnCount="4"
+                        app:rowCount="1">
+
+                        <LinearLayout
+                            android:layout_width="34dp"
+                            android:layout_height="23dp"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical"
+                            app:layout_gravity="center">
+
+                            <ImageView
+                                android:id="@+id/imageView14"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/ic_defaultdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="127dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/textView42"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bioku idowu Samuel"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/textView41"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="bioku.bioku@gmail.com"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="184dp"
+                            android:layout_height="47dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            app:layout_gravity="center">
+
+                            <Button
+                                android:id="@+id/button2"
+                                android:layout_width="148dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#800020"
+                                android:gravity="center"
+                                android:text="SMS"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp"
+                                app:strokeColor="#800020"
+                                app:strokeWidth="1dp" />
+
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Update"
+                                android:textColor="#800020"
+                                android:textSize="12sp"
+                                app:strokeColor="#800020"
+                                app:strokeWidth="1dp" />
+
+                        </LinearLayout>
+
+                    </androidx.gridlayout.widget.GridLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/categories_definition"
+                    android:orientation="horizontal">
+
+                    <androidx.gridlayout.widget.GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:columnCount="4"
+                        app:rowCount="1">
+
+                        <LinearLayout
+                            android:layout_width="34dp"
+                            android:layout_height="23dp"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical"
+                            app:layout_gravity="center">
+
+                            <ImageView
+                                android:id="@+id/imageView14"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/ic_defaultdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="127dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/textView42"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bioku idowu Samuel"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/textView41"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="bioku.bioku@gmail.com"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="184dp"
+                            android:layout_height="47dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            app:layout_gravity="center">
+
+                            <Button
+                                android:id="@+id/button2"
+                                android:layout_width="148dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#800020"
+                                android:gravity="center"
+                                android:text="SMS"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp"
+                                app:strokeColor="#800020"
+                                app:strokeWidth="1dp" />
+
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Update"
+                                android:textColor="#800020"
+                                android:textSize="12sp"
+                                app:strokeColor="#800020"
+                                app:strokeWidth="1dp" />
+
+                        </LinearLayout>
+
+                    </androidx.gridlayout.widget.GridLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/categories_definition"
+                    android:orientation="horizontal">
+
+                    <androidx.gridlayout.widget.GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:columnCount="4"
+                        app:rowCount="1">
+
+                        <LinearLayout
+                            android:layout_width="34dp"
+                            android:layout_height="23dp"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical"
+                            app:layout_gravity="center">
+
+                            <ImageView
+                                android:id="@+id/imageView14"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/ic_defaultdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="127dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/textView42"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bioku idowu Samuel"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/textView41"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="bioku.bioku@gmail.com"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="184dp"
+                            android:layout_height="47dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            app:layout_gravity="center">
+
+                            <Button
+                                android:id="@+id/button2"
+                                android:layout_width="148dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#800020"
+                                android:gravity="center"
+                                android:text="SMS"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp"
+                                app:strokeColor="#800020"
+                                app:strokeWidth="1dp" />
+
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Update"
+                                android:textColor="#800020"
+                                android:textSize="12sp"
+                                app:strokeColor="#800020"
+                                app:strokeWidth="1dp" />
+
+                        </LinearLayout>
+
+                    </androidx.gridlayout.widget.GridLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/categories_definition"
+                    android:orientation="horizontal">
+
+                    <androidx.gridlayout.widget.GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:columnCount="4"
+                        app:rowCount="1">
+
+                        <LinearLayout
+                            android:layout_width="34dp"
+                            android:layout_height="23dp"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical"
+                            app:layout_gravity="center">
+
+                            <ImageView
+                                android:id="@+id/imageView14"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/ic_defaultdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="127dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/textView42"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bioku idowu Samuel"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/textView41"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="bioku.bioku@gmail.com"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="184dp"
+                            android:layout_height="47dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            app:layout_gravity="center">
+
+                            <Button
+                                android:id="@+id/button2"
+                                android:layout_width="148dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#800020"
+                                android:gravity="center"
+                                android:text="SMS"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp"
+                                app:strokeColor="#800020"
+                                app:strokeWidth="1dp" />
+
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Update"
+                                android:textColor="#800020"
+                                android:textSize="12sp"
+                                app:strokeColor="#800020"
+                                app:strokeWidth="1dp" />
+
+                        </LinearLayout>
+
+                    </androidx.gridlayout.widget.GridLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/categories_definition"
+                    android:orientation="horizontal">
+
+                    <androidx.gridlayout.widget.GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:columnCount="4"
+                        app:rowCount="1">
+
+                        <LinearLayout
+                            android:layout_width="34dp"
+                            android:layout_height="23dp"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical"
+                            app:layout_gravity="center">
+
+                            <ImageView
+                                android:id="@+id/imageView14"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/ic_defaultdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="127dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/textView42"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bioku idowu Samuel"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/textView41"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="bioku.bioku@gmail.com"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="184dp"
+                            android:layout_height="47dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            app:layout_gravity="center">
+
+                            <Button
+                                android:id="@+id/button2"
+                                android:layout_width="148dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#800020"
+                                android:gravity="center"
+                                android:text="SMS"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp"
+                                app:strokeColor="#800020"
+                                app:strokeWidth="1dp" />
+
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Update"
+                                android:textColor="#800020"
+                                android:textSize="12sp"
+                                app:strokeColor="#800020"
+                                app:strokeWidth="1dp" />
+
+                        </LinearLayout>
+
+                    </androidx.gridlayout.widget.GridLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/categories_definition"
+                    android:orientation="horizontal">
+
+                    <androidx.gridlayout.widget.GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:columnCount="4"
+                        app:rowCount="1">
+
+                        <LinearLayout
+                            android:layout_width="34dp"
+                            android:layout_height="23dp"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical"
+                            app:layout_gravity="center">
+
+                            <ImageView
+                                android:id="@+id/imageView14"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/ic_defaultdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="127dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/textView42"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bioku idowu Samuel"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/textView41"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="bioku.bioku@gmail.com"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="184dp"
+                            android:layout_height="47dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            app:layout_gravity="center">
+
+                            <Button
+                                android:id="@+id/button2"
+                                android:layout_width="148dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#800020"
+                                android:gravity="center"
+                                android:text="SMS"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp"
+                                app:strokeColor="#800020"
+                                app:strokeWidth="1dp" />
+
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Update"
+                                android:textColor="#800020"
+                                android:textSize="12sp"
+                                app:strokeColor="#800020"
+                                app:strokeWidth="1dp" />
+
+                        </LinearLayout>
+
+                    </androidx.gridlayout.widget.GridLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/categories_definition"
+                    android:orientation="horizontal">
+
+                    <androidx.gridlayout.widget.GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:columnCount="4"
+                        app:rowCount="1">
+
+                        <LinearLayout
+                            android:layout_width="34dp"
+                            android:layout_height="23dp"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical"
+                            app:layout_gravity="center">
+
+                            <ImageView
+                                android:id="@+id/imageView14"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/ic_defaultdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="127dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/textView42"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bioku idowu Samuel"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/textView41"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="bioku.bioku@gmail.com"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="184dp"
+                            android:layout_height="47dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            app:layout_gravity="center">
+
+                            <Button
+                                android:id="@+id/button2"
+                                android:layout_width="148dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#800020"
+                                android:gravity="center"
+                                android:text="SMS"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp"
+                                app:strokeColor="#800020"
+                                app:strokeWidth="1dp" />
+
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#FFFFFF"
+                                android:gravity="center"
+                                android:text="Update"
+                                android:textColor="#800020"
+                                android:textSize="12sp"
+                                app:strokeColor="#800020"
+                                app:strokeWidth="1dp" />
 
                         </LinearLayout>
 

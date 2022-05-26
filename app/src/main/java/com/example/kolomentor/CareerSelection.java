@@ -54,13 +54,6 @@ public class CareerSelection extends AppCompatActivity {
             }
         });
     }
-//    public void popUpCard (View view) {
-//        PopupMenu popupMenu = new PopupMenu(this, view);
-//        popupMenu.inflate(R.menu.my_drawer_menu);
-//        popupMenu.show();
-//    }
-
-
 
     public void popUpCard (View view) {
         Dialog myDialog = new Dialog(this);
