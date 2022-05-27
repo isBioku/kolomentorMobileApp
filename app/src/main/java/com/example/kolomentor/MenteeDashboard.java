@@ -7,11 +7,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
+
 import androidx.gridlayout.widget.GridLayout;
+
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.util.Objects;
 
 public class MenteeDashboard extends AppCompatActivity{
+
     GridLayout homeGrid, resourcesGrid, communityDrid,  messagesGrid, profileGrid;
 
     @Override
@@ -23,7 +28,13 @@ public class MenteeDashboard extends AppCompatActivity{
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_mentee_dashboard);
+
+
+
+
     }
+
+
 
 
     public void goToResources (View view ) {

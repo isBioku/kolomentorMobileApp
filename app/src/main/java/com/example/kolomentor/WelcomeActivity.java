@@ -12,7 +12,8 @@ import android.widget.Button;
 import java.util.Objects;
 
 public class WelcomeActivity extends AppCompatActivity {
-    Button menteeButton;
+    Button menteeButton, mentorButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,11 +29,20 @@ public class WelcomeActivity extends AppCompatActivity {
 
 
         menteeButton = findViewById(R.id.menteeRegistrationButton);
+        mentorButton = findViewById(R.id.menteeRegistrationButton);
         menteeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(WelcomeActivity.this, SignUpActivity.class));
                 finish();
+            }
+        });
+
+        mentorButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(WelcomeActivity.this, MentorDashboard.class);
+                startActivity(intent);
             }
         });
 
