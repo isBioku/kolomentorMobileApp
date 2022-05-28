@@ -109,4 +109,33 @@
     <string name="css">CSS</string>
     <string name="javascript">JAVASCRIPT</string>
     <string name="bootstrap">BOOTSTRAP</string>
+    <string name="todo">TODO</string>
+
+    <string-array name="List_of_fields_available">
+        <item>Web Development</item>
+        <item>App Development</item>
+        <item>Devops </item>
+        <item>Front Engineering</item>
+        <item>Back End Engineering</item>
+        <item>Web Development</item>
+        <item>App Development</item>
+        <item>Devops </item>
+        <item>Front Engineering</item>
+        <item>Back End Engineering</item>
+        <item>Web Development</item>
+        <item>App Development</item>
+        <item>Devops </item>
+        <item>Front Engineering</item>
+        <item>Back End Engineering</item>
+        <item>Web Development</item>
+        <item>App Development</item>
+        <item>Devops </item>
+        <item>Front Engineering</item>
+        <item>Back End Engineering</item>
+        <item>Web Development</item>
+        <item>App Development</item>
+        <item>Devops </item>
+        <item>Front Engineering</item>
+        <item>Back End Engineering</item>
+    </string-array>
 </resources>

@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Patterns;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -17,16 +16,13 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.net.Authenticator;
 import java.util.Objects;
 
-public class SignUpActivity extends AppCompatActivity {
+public class MenteSignUpActivity extends AppCompatActivity {
     private FirebaseAuth authentication;
 
 
@@ -52,12 +48,12 @@ public class SignUpActivity extends AppCompatActivity {
         login_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goToLogin = new Intent(SignUpActivity.this, Login.class);
+                Intent goToLogin = new Intent(MenteSignUpActivity.this, Login.class);
                 startActivity(goToLogin);
             }
         });
 
-        sign_up_button = findViewById(R.id.sign_up_button_id);
+        sign_up_button = findViewById(R.id.smentor_ign_up_button_id);
         sign_up_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,7 +68,7 @@ public class SignUpActivity extends AppCompatActivity {
 
     }
 
-    public void signUp () {
+    public void signUp (  ) {
         String  email_patterns =  "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
 
         authentication = FirebaseAuth.getInstance();
@@ -151,17 +147,17 @@ public class SignUpActivity extends AppCompatActivity {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if (task.isSuccessful()) {
-                                        Toast.makeText(SignUpActivity.this, "Registration Successful" , Toast.LENGTH_LONG).show();
-                                        Intent goToCareerSelection = new Intent( SignUpActivity.this, CareerSelection.class);
+                                        Toast.makeText(MenteSignUpActivity.this, "Registration Successful" , Toast.LENGTH_LONG).show();
+                                        Intent goToCareerSelection = new Intent( MenteSignUpActivity.this, CareerSelection.class);
                                         startActivity(goToCareerSelection);
                                         finish();
                                     }else {
-                                        Toast.makeText(SignUpActivity.this, "Registration Failed " , Toast.LENGTH_LONG).show();
+                                        Toast.makeText(MenteSignUpActivity.this, "Registration Failed " , Toast.LENGTH_LONG).show();
                                     }
                                 }
                             });
                 }else {
-                    Toast.makeText(SignUpActivity.this, "Registration Failed " , Toast.LENGTH_LONG).show();
+                    Toast.makeText(MenteSignUpActivity.this, "Registration Failed " , Toast.LENGTH_LONG).show();
                 }
             }
         });

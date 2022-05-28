@@ -28,12 +28,12 @@ public class MentorDashboard extends AppCompatActivity {
 
         smsButton = findViewById(R.id.sms_button);
         buttomSheetDialog = new BottomSheetDialog(this);
-        buttomSheet();
+
 
         smsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                buttomSheetDialog.show();
+                buttomSheet();
             }
         });
 
@@ -43,5 +43,6 @@ public class MentorDashboard extends AppCompatActivity {
     private void buttomSheet() {
         View view = getLayoutInflater().inflate(R.layout.bottom_sheet, null, false);
         buttomSheetDialog.setContentView(view);
+        buttomSheetDialog.show();
     }
 }

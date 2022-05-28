@@ -185,7 +185,7 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/sign_up_button_id"
+                    android:id="@+id/smentor_ign_up_button_id"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MentorSignUP">
+
+  <LinearLayout
+      android:id="@+id/linearLayout7"
+      android:layout_width="156dp"
+      android:layout_height="47dp"
+      android:orientation="vertical"
+      app:layout_constraintBottom_toTopOf="@+id/linearLayout11"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent">
+
+    <TextView
+        android:id="@+id/kolomentorText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/signUpText"
+        android:textColor="#800020"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintStart_toStartOf="parent" />
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/linearLayout11"
+      android:layout_width="409dp"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintBottom_toTopOf="@+id/guideline46"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:columnCount="1"
+        app:rowCount="7">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/last_name_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/text_background"
+            android:ems="10"
+            android:hint=" last name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="#E1D5D5"
+            tools:ignore="TouchTargetSizeCheck" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/first_name_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_background"
+            android:ems="10"
+            android:hint="first name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="#E1D5D5" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/email_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_background"
+            android:ems="10"
+            android:hint="email "
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColorHint="#E1D5D5" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/password_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_background"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:padding="10sp"
+            android:textColorHint="#E1D5D5" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/re_enter_password_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_background"
+            android:ems="10"
+            android:hint="re-enter password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColorHint="#E1D5D5" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/careerSelectionLayout"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="170dp"
+              android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_layout_id"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:hintTextColor="#800020">
+
+              <AutoCompleteTextView
+                  android:id="@+id/auto_complete_text_view_id"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:background="@drawable/text_background"
+                  android:hint="Select your field "
+                  android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+          </LinearLayout>
+        </ScrollView>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/ertyerty"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+        <Button
+            android:id="@+id/smentor_ign_up_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#800020"
+            android:padding="10dp"
+            android:text="SIGN UP"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/login_text_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/loginTextBtn"
+            android:textColor="#E8C1CB"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+      </LinearLayout>
+    </androidx.gridlayout.widget.GridLayout>
+  </LinearLayout>
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline46"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_begin="639dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,7 +6,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="426dp"
-        android:background="#8C2A2A"
-        android:orientation="horizontal"></LinearLayout>
+        android:layout_height="504dp"
+        android:background="@drawable/categories_definition"
+        android:backgroundTint="#DFD6D6"
+        android:orientation="horizontal" />
 </LinearLayout>

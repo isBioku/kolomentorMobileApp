@@ -33,6 +33,7 @@
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_robot_line.xml" value="0.317" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_security.xml" value="0.317" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_send_plane_fill.xml" value="0.3425" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_server.xml" value="0.242" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_testing.xml" value="0.317" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_toggle_foreground.xml" value="0.1935" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/ic_writing.xml" value="0.317" />
@@ -50,6 +51,7 @@
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/text_background.xml" value="0.317" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/write_message_background.xml" value="0.3425" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout-sw320dp/activity_welcome.xml" value="0.3056861906797777" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout-w936dp/mentor_sign_up.xml" value="0.40576171875" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/activity_categories_popup.xml" value="0.2391304347826087" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/activity_list_of_mentor.xml" value="0.3056861906797777" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/activity_login.xml" value="0.152" />
@@ -59,16 +61,21 @@
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/activity_mentee_dashboard.xml" value="0.264" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/activity_mentor_choice.xml" value="0.2" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/activity_mentor_dashboard.xml" value="0.264" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/activity_mentor_sign_up.xml" value="0.3056861906797777" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/activity_messages.xml" value="0.152" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/activity_select_mentor.xml" value="0.264" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/activity_sign_up.xml" value="0.2223731884057971" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/activity_special.xml" value="0.3056861906797777" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/activity_welcome.xml" value="0.2129115006412997" />
-        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/activity_welcomepage.xml" value="0.264" />
-        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/bottom_sheet.xml" value="0.2129115006412997" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/activity_welcomepage.xml" value="0.23786407766990292" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/bottom_sheet.xml" value="0.2" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/career_selection.xml" value="0.264" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/content_scrolling.xml" value="0.25067996373526746" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/fragment_blank.xml" value="0.2466866182129115" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/fragment_item_list.xml" value="0.2466866182129115" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/mentee_activity.xml" value="0.152" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/mentor_career_choice_dropdown.xml" value="0.2" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/mentor_field.xml" value="0.258230012825994" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/resources_activity.xml" value="0.3056861906797777" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/resourcs_activity.xml" value="0.264" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/rounded.xml" value="0.2941427960666952" />

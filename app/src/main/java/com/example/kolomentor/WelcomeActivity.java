@@ -8,11 +8,13 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.TextView;
 
 import java.util.Objects;
 
 public class WelcomeActivity extends AppCompatActivity {
     Button menteeButton, mentorButton;
+    TextView loginText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +23,6 @@ public class WelcomeActivity extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).hide();
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        //resizeAllScreen();
 
 
 
@@ -29,25 +30,34 @@ public class WelcomeActivity extends AppCompatActivity {
 
 
         menteeButton = findViewById(R.id.menteeRegistrationButton);
-        mentorButton = findViewById(R.id.menteeRegistrationButton);
+
         menteeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(WelcomeActivity.this, SignUpActivity.class));
+                goToMenteeSignUp();
+                finish();
+            }
+        });
+        mentorButton = findViewById(R.id.mentor_Button);
+        mentorButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                goToMentorSignUp();
                 finish();
             }
         });
 
-        mentorButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(WelcomeActivity.this, MentorDashboard.class);
-                startActivity(intent);
-            }
-        });
+    }
 
+    public void goToMentorSignUp () {
+        Intent intent = new Intent(WelcomeActivity.this, MentorSignUP.class);
+        startActivity(intent);
+    }
 
-
+    public void goToMenteeSignUp () {
+        Intent intent = new Intent(WelcomeActivity.this, MenteSignUpActivity.class);
+        startActivity(intent);
     }
 
 
