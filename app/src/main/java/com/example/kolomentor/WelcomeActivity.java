@@ -56,7 +56,7 @@ public class WelcomeActivity extends AppCompatActivity {
     }
 
     public void goToMenteeSignUp () {
-        Intent intent = new Intent(WelcomeActivity.this, MenteSignUpActivity.class);
+        Intent intent = new Intent(WelcomeActivity.this, CareerSelection.class);
         startActivity(intent);
     }
 

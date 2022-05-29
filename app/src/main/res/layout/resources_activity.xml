@@ -130,7 +130,7 @@
                 tools:ignore="TouchTargetSizeCheck">
 
                 <TextView
-                    android:id="@+id/textView244"
+                    android:id="@+id/programming_text_id"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -152,7 +152,7 @@
                 tools:ignore="TouchTargetSizeCheck">
 
                 <TextView
-                    android:id="@+id/textView224"
+                    android:id="@+id/management_text_id"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -174,7 +174,7 @@
                 tools:ignore="TouchTargetSizeCheck">
 
                 <TextView
-                    android:id="@+id/textView24"
+                    android:id="@+id/graphic_and_design_text_id"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

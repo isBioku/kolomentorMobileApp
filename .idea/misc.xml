@@ -48,6 +48,9 @@
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/sender.xml" value="0.2125" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/special_info.xml" value="0.3425" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/succes_text_wrapper.xml" value="0.317" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/tab_background.xml" value="0.241" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/tab_background_filled.xml" value="0.242" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/tab_background_unfilled.xml" value="0.242" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/text_background.xml" value="0.317" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/drawable/write_message_background.xml" value="0.3425" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout-sw320dp/activity_welcome.xml" value="0.3056861906797777" />
@@ -80,6 +83,7 @@
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/resourcs_activity.xml" value="0.264" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/rounded.xml" value="0.2941427960666952" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/sign_up.xml" value="0.264" />
+        <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/layout/tab_backgrund.xml" value="0.19281744335185977" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/menu/menu_scrolling.xml" value="0.3056861906797777" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/menu/my_drawer_menu.xml" value="0.30181511186154497" />
         <entry key="..\:/Users/isBIOKU/AndroidStudioProjects/Kolomentor/app/src/main/res/menu/pdf_resource_menu.xml" value="0.3056861906797777" />
