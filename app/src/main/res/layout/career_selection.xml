@@ -179,7 +179,7 @@
                 android:id="@+id/imageView4"
                 android:layout_width="match_parent"
                 android:layout_height="34dp"
-                android:onClick="popUpCard"
+
                 app:srcCompat="@drawable/ic_equalizer_fill" />
         </LinearLayout>
 
@@ -816,7 +816,7 @@
                     app:cardElevation="5dp">
 
                     <ImageView
-                        android:id="@+id/imageVjhjgiew28"
+                        android:id="@+id/imageVjhrwerqefweergrjgiew28"
                         android:layout_width="match_parent"
                         android:layout_height="90dp"
                         android:layout_gravity="center"
@@ -824,7 +824,7 @@
                         app:srcCompat="@drawable/ic_cloud_engineering" />
 
                     <TextView
-                        android:id="@+id/textView19"
+                        android:id="@+id/textVwerfiew19"
                         android:layout_width="128dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
@@ -840,7 +840,7 @@
                     app:cardElevation="5dp">
 
                     <ImageView
-                        android:id="@+id/imageVjhjgiew28"
+                        android:id="@+id/imageVjhergeregejgiew28"
                         android:layout_width="match_parent"
                         android:layout_height="90dp"
                         android:layout_gravity="center"
@@ -848,7 +848,7 @@
                         app:srcCompat="@drawable/ic_cloud_engineering" />
 
                     <TextView
-                        android:id="@+id/textView19"
+                        android:id="@+id/textVieergerw19"
                         android:layout_width="128dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
@@ -864,7 +864,7 @@
                     app:cardElevation="5dp">
 
                     <ImageView
-                        android:id="@+id/imageVjhjgiew28"
+                        android:id="@+id/imageVjhjgergeriew28"
                         android:layout_width="match_parent"
                         android:layout_height="90dp"
                         android:layout_gravity="center"
@@ -872,7 +872,7 @@
                         app:srcCompat="@drawable/ic_cloud_engineering" />
 
                     <TextView
-                        android:id="@+id/textView19"
+                        android:id="@+id/teeergxtView19"
                         android:layout_width="128dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
@@ -888,7 +888,7 @@
                     app:cardElevation="5dp">
 
                     <ImageView
-                        android:id="@+id/imageVjhjgiew28"
+                        android:id="@+id/imadeergergeVjhjgiew28"
                         android:layout_width="match_parent"
                         android:layout_height="90dp"
                         android:layout_gravity="center"
@@ -896,7 +896,7 @@
                         app:srcCompat="@drawable/ic_cloud_engineering" />
 
                     <TextView
-                        android:id="@+id/textView19"
+                        android:id="@+id/textergerView19"
                         android:layout_width="128dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
@@ -912,7 +912,7 @@
                     app:cardElevation="5dp">
 
                     <ImageView
-                        android:id="@+id/imageVjhjgiew28"
+                        android:id="@+id/imageVjhjwerfgerggiew28"
                         android:layout_width="match_parent"
                         android:layout_height="90dp"
                         android:layout_gravity="center"
@@ -920,7 +920,7 @@
                         app:srcCompat="@drawable/ic_cloud_engineering" />
 
                     <TextView
-                        android:id="@+id/textView19"
+                        android:id="@+id/textVdgdfiew19"
                         android:layout_width="128dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
