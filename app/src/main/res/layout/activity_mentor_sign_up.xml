@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MentorSignUP">
 
+  <ImageView
+      android:id="@+id/loading_id"
+      android:layout_width="404dp"
+      android:layout_height="568dp"
+      android:layout_marginTop="123dp"
+      android:visibility="gone"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/linearLayout11"
+      app:srcCompat="@drawable/ic_loading" />
+
   <LinearLayout
       android:id="@+id/linearLayout7"
       android:layout_width="156dp"
@@ -214,6 +225,7 @@
             android:textSize="14sp"
             tools:ignore="TouchTargetSizeCheck" />
       </LinearLayout>
+
     </androidx.gridlayout.widget.GridLayout>
   </LinearLayout>
 

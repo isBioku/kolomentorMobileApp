@@ -1,5 +1,7 @@
 package com.example.kolomentor;
 
+import static android.view.View.VISIBLE;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,11 +12,14 @@ import android.text.TextUtils;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -28,6 +33,7 @@ import java.util.Objects;
 
 public class MentorSignUP extends AppCompatActivity {
     private FirebaseAuth authentication;
+    ImageView loading;
 
     private EditText last_name_field, first_name_field, email_field, password_field, re_enter_password_field;
     LinearLayout mentorCareerSelectionLayout;
@@ -99,51 +105,66 @@ public class MentorSignUP extends AppCompatActivity {
         if (TextUtils.isEmpty(lastName)) {
             last_name_field.setHint("Last Name Cannot be Empty");
             last_name_field.setBackgroundResource(R.drawable.not_started_text_wrapper);
-            last_name_field.setError("Last Name Cannot be Empty");
+            //last_name_field.setError("Last Name Cannot be Empty");
             return;
         }else if (lastName.length()<2) {
-            last_name_field.setText("Password not equals to reenter password");
+            last_name_field.setError("Character cannot be lesser than 2");
             last_name_field.setBackgroundResource(R.drawable.not_started_text_wrapper);
             return;
         }else if (!TextUtils.isEmpty(lastName)) {
             last_name_field.setBackgroundResource(R.drawable.succes_text_wrapper);
             last_name_field.getVisibility();
-
         }
 
         if (TextUtils.isEmpty(firstName)) {
-            first_name_field.setText("Password not equals to reenter password");
+            first_name_field.setHint("First name cannot be empty");
             first_name_field.setBackgroundResource(R.drawable.not_started_text_wrapper);
             return;
+        }else if (firstName.length()<2) {
+            first_name_field.setHint("Character cannot be lesser than 2");
+            first_name_field.setBackgroundResource(R.drawable.not_started_text_wrapper);
+            return;
+        }else {
+            first_name_field.setBackgroundResource(R.drawable.succes_text_wrapper);
+            first_name_field.getVisibility();
         }
+
         if (TextUtils.isEmpty(email)) {
-            email_field.setText("Password not equals to reenter password");
+            email_field.setHint("Email field cannot be empty");
             email_field.setBackgroundResource(R.drawable.not_started_text_wrapper);
             return;
         }else if (!email.matches(email_patterns)) {
-            email_field.setText("Password not equals to reenter password");
+            email_field.setHint("Password not equals to reenter password");
             email_field.setBackgroundResource(R.drawable.not_started_text_wrapper);
             return;
-        }
-        if (TextUtils.isEmpty(password)) {
-            re_enter_password_field.setText("Password not equals to reenter password");
-            re_enter_password_field.setBackgroundResource(R.drawable.not_started_text_wrapper);
-            return;
-        }else if(password.length() < 7 ) {
-            password_field.setText("Password not equals to reenter password");
-            password_field.setBackgroundResource(R.drawable.not_started_text_wrapper);
-            return;
-        }else if (!password.equals(reEnterPassword)) {
-            password_field.setText("Password not equals to reenter password");
-            password_field.setBackgroundResource(R.drawable.not_started_text_wrapper);
-            return;
+        }else{
+            email_field.setBackgroundResource(R.drawable.succes_text_wrapper);
+            email_field.getVisibility();
         }
 
         if (TextUtils.isEmpty(password)) {
-            password_field.setText("Password not equals to reenter password");
+            re_enter_password_field.setHint("Password field cannot be empty");
+            re_enter_password_field.setBackgroundResource(R.drawable.not_started_text_wrapper);
+            return;
+        }else if(password.length() < 7 ) {
+            password_field.setHint("Password characters lesser than 7");
+            password_field.setBackgroundResource(R.drawable.not_started_text_wrapper);
+            return;
+        }else{
+            password_field.setBackgroundResource(R.drawable.succes_text_wrapper);
+            password_field.getVisibility();
+        }
+
+        if (TextUtils.isEmpty(reEnterPassword)) {
+            password_field.setHint("Confirm password field cannot be empty");
             password_field.requestFocus();
             return;
+        }else if (!password.equals(reEnterPassword)) {
+            password_field.setHint("Not Matching with password");
+            password_field.setBackgroundResource(R.drawable.not_started_text_wrapper);
+            return;
         }
+        listOfMentorCareerPopUp ();
         authentication.createUserWithEmailAndPassword(email, password )
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
@@ -156,6 +177,8 @@ public class MentorSignUP extends AppCompatActivity {
                                     .setValue(registerMentors).addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
+                                            loading = findViewById(R.id.loading_id);
+                                            loading.setVisibility(VISIBLE);
                                             if (task.isSuccessful()) {
                                                 Toast.makeText(MentorSignUP.this, "Registration Successful" , Toast.LENGTH_LONG).show();
                                                 Intent goToCareerSelection = new Intent( MentorSignUP.this, CareerSelection.class);
@@ -163,11 +186,13 @@ public class MentorSignUP extends AppCompatActivity {
                                                 finish();
                                             }else {
                                                 Toast.makeText(MentorSignUP.this, "Registration Failed " , Toast.LENGTH_LONG).show();
+                                                loading.setVisibility(VISIBLE);
                                             }
                                         }
                                     });
                         }else {
                             Toast.makeText(MentorSignUP.this, "Registration Failed " , Toast.LENGTH_LONG).show();
+                            loading.setVisibility(VISIBLE);
                         }
                     }
                 });
@@ -181,6 +206,28 @@ public class MentorSignUP extends AppCompatActivity {
         String[] list_of_mentors_career = resources.getStringArray(R.array.List_of_fields_available);
         ArrayAdapter<String> listOfCareers = new ArrayAdapter<String>(MentorSignUP.this, R.layout.mentor_field, list_of_mentors_career);
         autoCompleteTextView.setAdapter(listOfCareers);
+
+        autoCompleteTextView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+              String mentorCareer = (String) parent.getItemAtPosition(position);
+
+              if (mentorCareer == null) {
+                  autoCompleteTextView.setBackgroundResource(R.drawable.not_started_text_wrapper);
+                  autoCompleteTextView.setHint("You must select a discipline");
+              }else{
+                  autoCompleteTextView.setBackgroundResource(R.drawable.succes_text_wrapper);
+              }
+              return;
+            }
+
+        });
+
+
+
+
+
+
 
     }
 }
