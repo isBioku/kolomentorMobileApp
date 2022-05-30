@@ -58,6 +58,25 @@
 
       <LinearLayout
           android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/first_name_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_background"
+            android:ems="10"
+            android:hint="first name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="#E1D5D5" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:layout_marginTop="10dp"
           android:layout_marginBottom="10dp"
@@ -74,25 +93,6 @@
             android:padding="10dp"
             android:textColorHint="#E1D5D5"
             tools:ignore="TouchTargetSizeCheck" />
-      </LinearLayout>
-
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:layout_marginTop="10dp"
-          android:layout_marginBottom="10dp"
-          android:orientation="vertical">
-
-        <EditText
-            android:id="@+id/first_name_id"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/text_background"
-            android:ems="10"
-            android:hint="first name"
-            android:inputType="textPersonName"
-            android:padding="10dp"
-            android:textColorHint="#E1D5D5" />
       </LinearLayout>
 
       <LinearLayout
@@ -152,43 +152,22 @@
             android:textColorHint="#E1D5D5" />
       </LinearLayout>
 
-      <LinearLayout
-          android:id="@+id/careerSelectionLayout"
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/text_input_layout_id"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
           android:layout_width="match_parent"
           android:layout_height="match_parent"
-          android:layout_marginTop="10dp"
-          android:layout_marginBottom="10dp"
-          android:orientation="vertical">
+          android:hint="Select your field "
+          app:hintTextColor="#800020">
 
-        <ScrollView
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete_text_view_id"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-          <LinearLayout
-              android:layout_width="match_parent"
-              android:layout_height="170dp"
-              android:orientation="vertical">
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/text_input_layout_id"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:hintTextColor="#800020">
-
-              <AutoCompleteTextView
-                  android:id="@+id/auto_complete_text_view_id"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:layout_weight="1"
-                  android:background="@drawable/text_background"
-                  android:hint="Select your field "
-                  android:inputType="none" />
-            </com.google.android.material.textfield.TextInputLayout>
-          </LinearLayout>
-        </ScrollView>
-
-      </LinearLayout>
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/text_background"
+            android:inputType="none" />
+      </com.google.android.material.textfield.TextInputLayout>
 
       <LinearLayout
           android:id="@+id/ertyerty"
@@ -235,4 +214,5 @@
       android:layout_height="wrap_content"
       android:orientation="horizontal"
       app:layout_constraintGuide_begin="639dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

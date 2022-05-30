@@ -180,6 +180,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="34dp"
 
+                android:onClick="popUpCard"
                 app:srcCompat="@drawable/ic_equalizer_fill" />
         </LinearLayout>
 
@@ -821,7 +822,7 @@
                         android:layout_height="90dp"
                         android:layout_gravity="center"
                         android:layout_margin="20dp"
-                        app:srcCompat="@drawable/ic_cloud_engineering" />
+                        app:srcCompat="@drawable/ic_art_designer" />
 
                     <TextView
                         android:id="@+id/textVwerfiew19"
@@ -845,7 +846,7 @@
                         android:layout_height="90dp"
                         android:layout_gravity="center"
                         android:layout_margin="20dp"
-                        app:srcCompat="@drawable/ic_cloud_engineering" />
+                        app:srcCompat="@drawable/ic_animation_designer" />
 
                     <TextView
                         android:id="@+id/textVieergerw19"
@@ -869,7 +870,7 @@
                         android:layout_height="90dp"
                         android:layout_gravity="center"
                         android:layout_margin="20dp"
-                        app:srcCompat="@drawable/ic_cloud_engineering" />
+                        app:srcCompat="@drawable/ic_brand_specialist" />
 
                     <TextView
                         android:id="@+id/teeergxtView19"
@@ -893,7 +894,7 @@
                         android:layout_height="90dp"
                         android:layout_gravity="center"
                         android:layout_margin="20dp"
-                        app:srcCompat="@drawable/ic_cloud_engineering" />
+                        app:srcCompat="@drawable/ic_video_editor" />
 
                     <TextView
                         android:id="@+id/textergerView19"
@@ -917,7 +918,7 @@
                         android:layout_height="90dp"
                         android:layout_gravity="center"
                         android:layout_margin="20dp"
-                        app:srcCompat="@drawable/ic_cloud_engineering" />
+                        app:srcCompat="@drawable/ic_creative_editor" />
 
                     <TextView
                         android:id="@+id/textVdgdfiew19"
@@ -954,7 +955,7 @@
                         android:layout_height="90dp"
                         android:layout_gravity="center"
                         android:layout_margin="20dp"
-                        app:srcCompat="@drawable/ic_app_development" />
+                        app:srcCompat="@drawable/ic_figma_expert" />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
@@ -970,7 +971,7 @@
                         android:layout_height="90dp"
                         android:layout_gravity="center"
                         android:layout_margin="20dp"
-                        app:srcCompat="@drawable/ic_server" />
+                        app:srcCompat="@drawable/ic_ui_ux" />
 
                     <TextView
                         android:id="@+id/textView15"
@@ -995,7 +996,7 @@
                         android:layout_height="90dp"
                         android:layout_gravity="center"
                         android:layout_margin="20dp"
-                        app:srcCompat="@drawable/ic_software_engineering" />
+                        app:srcCompat="@drawable/ic_production_artist" />
 
                     <TextView
                         android:id="@+id/textView16"
@@ -1019,14 +1020,14 @@
                         android:layout_height="90dp"
                         android:layout_gravity="center"
                         android:layout_margin="20dp"
-                        app:srcCompat="@drawable/ic_web_development" />
+                        app:srcCompat="@drawable/ic_corel_draw_expert" />
 
                     <TextView
                         android:id="@+id/textView17"
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:text="Corel Draw Expert"
+                        android:text="Graphics designer"
                         android:textColor="#800020" />
                 </androidx.cardview.widget.CardView>
 
@@ -1050,7 +1051,7 @@
                         android:layout_width="128dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:text="Graphics Designer"
+                        android:text="3D modelling"
                         android:textColor="#800020" />
                 </androidx.cardview.widget.CardView>
 

@@ -36,10 +36,11 @@ public class MentorSignUP extends AppCompatActivity {
     ImageView loading;
 
     private EditText last_name_field, first_name_field, email_field, password_field, re_enter_password_field;
-    LinearLayout mentorCareerSelectionLayout;
 
-    TextInputLayout textInputLayout;
+
+    //TextInputLayout textInputLayout;
     AutoCompleteTextView autoCompleteTextView;
+
     Button mentorSignUpBtn;
 
 
@@ -54,26 +55,6 @@ public class MentorSignUP extends AppCompatActivity {
 
         setContentView(R.layout.activity_mentor_sign_up);
 
-        textInputLayout = findViewById(R.id.text_input_layout_id);
-        autoCompleteTextView = findViewById(R.id.auto_complete_text_view_id);
-
-        autoCompleteTextView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                listOfMentorCareerPopUp();
-            }
-        });
-
-        mentorCareerSelectionLayout = findViewById(R.id.careerSelectionLayout);
-        mentorCareerSelectionLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                listOfMentorCareerPopUp();
-            }
-        });
-
-
         mentorSignUpBtn = findViewById(R.id.smentor_ign_up_button_id);
         mentorSignUpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,7 +63,26 @@ public class MentorSignUP extends AppCompatActivity {
             }
         });
 
+        autoCompleteTextView = findViewById(R.id.auto_complete_text_view_id);
+
+        autoCompleteTextView = findViewById(R.id.auto_complete_text_view_id);
+
+        autoCompleteTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                listOfMentorCareerPopUp();
+
+
+            }
+        });
+
+
+
+
     }
+
+
 
     public void goToMentorDashboard (  ) {
         String  email_patterns =  "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
@@ -100,6 +100,8 @@ public class MentorSignUP extends AppCompatActivity {
         String email = email_field.getText().toString().trim();
         String password = password_field.getText().toString().trim();
         String reEnterPassword = re_enter_password_field.getText().toString().trim();
+        String careerSelection = autoCompleteTextView.getText().toString().trim();
+
 
 
         if (TextUtils.isEmpty(lastName)) {
@@ -164,7 +166,11 @@ public class MentorSignUP extends AppCompatActivity {
             password_field.setBackgroundResource(R.drawable.not_started_text_wrapper);
             return;
         }
-        listOfMentorCareerPopUp ();
+        if (TextUtils.isEmpty(careerSelection)) {
+
+        }
+
+
         authentication.createUserWithEmailAndPassword(email, password )
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
@@ -210,24 +216,10 @@ public class MentorSignUP extends AppCompatActivity {
         autoCompleteTextView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-              String mentorCareer = (String) parent.getItemAtPosition(position);
-
-              if (mentorCareer == null) {
-                  autoCompleteTextView.setBackgroundResource(R.drawable.not_started_text_wrapper);
-                  autoCompleteTextView.setHint("You must select a discipline");
-              }else{
-                  autoCompleteTextView.setBackgroundResource(R.drawable.succes_text_wrapper);
-              }
-              return;
+                String mentorCareer = (String) parent.getItemAtPosition(position);
             }
 
         });
-
-
-
-
-
-
 
     }
 }

@@ -51,7 +51,7 @@ public class WelcomeActivity extends AppCompatActivity {
     }
 
     public void goToMentorSignUp () {
-        Intent intent = new Intent(WelcomeActivity.this, MentorSignUP.class);
+        Intent intent = new Intent(WelcomeActivity.this, MenteeDashboard.class);
         startActivity(intent);
     }
 
